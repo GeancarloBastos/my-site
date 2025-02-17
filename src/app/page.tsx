@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Page() {
   return (
@@ -49,16 +50,20 @@ export default function Page() {
                   Atualmente, estou no 5º semestre de ADS na UniSENAC Pelotas e em busca de oportunidades para aplicar meus conhecimentos e crescer profissionalmente.
                 </p>
                 <p className="mt-4">
-                  Caso tenha interesse em saber mais sobre meus projetos e habilidades, entre em contato ou confira minha página <a
-                    href="/about"
+                  Caso tenha interesse em saber mais sobre meus projetos e habilidades, entre em contato ou confira minha página{" "}
+                  <ScrollLink
+                    to="about"
+                    smooth={true}
+                    duration={500}
                     className="inline-block px-3 py-1 bg-blue-600 text-white rounded-full 
                       hover:bg-blue-700 transition-all duration-300 
                       hover:scale-125 hover:shadow-lg hover:shadow-blue-500/50 
                       hover:z-10 font-semibold text-base relative
-                      transform-gpu"
+                      transform-gpu cursor-pointer"
                   >
                     Sobre
-                  </a>.
+                  </ScrollLink>
+                  .
                 </p>
               </div>
               <div className="flex justify-center gap-6 mt-6 opacity-0 animate-fadeIn" style={{ animationDelay: '3.4s' }}>
