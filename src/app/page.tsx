@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
@@ -87,6 +87,16 @@ export default function Page() {
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <FaLinkedin size={24} />
+                </a>
+                <a
+                  href="/cv25.pdf"
+                  download="Curriculo_GeancarloBastos.pdf"
+                  className="flex items-center gap-2 px-4 py-1 bg-blue-600 text-white rounded-full 
+                    hover:bg-blue-700 transition-all duration-300 
+                    hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50"
+                >
+                  <FaFileDownload size={20} />
+                  <span className="text-sm font-medium">CV</span>
                 </a>
               </div>
               <p className="text-gray-400 text-sm mt-4 opacity-0 animate-fadeIn" style={{ animationDelay: '3.6s' }}>

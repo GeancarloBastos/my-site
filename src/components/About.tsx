@@ -83,14 +83,34 @@ const technologies = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
     level: 2
   },
+  {
+    name: 'Photoshop',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg',
+    level: 1
+  },
+  {
+    name: 'Canva',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg',
+    level: 3
+  },
+  {
+    name: 'Flutter',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg',
+    level: 1
+  },
+  {
+    name: 'Angular',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg',
+    level: 2
+  }
 ];
 
 export default function About() {
   return (
-    <main className="bg-zinc-950 py-8"> {/* Removido min-h-screen */}
-      <div className="container mx-auto px-4 mb-16"> {/* Reduzido mb-20 para mb-16 */}
+    <main className="bg-zinc-950 py-8">
+      <div className="container mx-auto px-4 mb-16">
         <div className="flex flex-col items-center">
-          <div className="w-48 h-48 md:w-56 md:h-56 relative rounded-full overflow-hidden shrink-0 group transition-transform duration-300 hover:scale-125 z-10"> {/* Reduzido tamanho base */}
+          <div className="w-48 h-48 md:w-56 md:h-56 relative rounded-full overflow-hidden shrink-0 group transition-transform duration-300 hover:scale-125 z-10">
             <Image
               src="/euw.jpeg"
               alt="Geancarlo Bastos"
