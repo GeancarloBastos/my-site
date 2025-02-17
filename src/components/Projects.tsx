@@ -23,7 +23,7 @@ const projects: Project[] = [
     description: "Portfolio pessoal desenvolvido com Next.js",
     image: "/mysite.png",
     images: ["/mysite.png", "/mysite2.png", "/mysite3.png"],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    technologies: ["JavaScript", "Tailwind CSS", "TypeScript", "Next.js"],
     github: "https://github.com/GeancarloBastos/my-site",
     liveDemo: "https://mysitegeancarlo.vercel.app/",
     longDescription: "Desenvolvi este site pessoal como uma vitrine para meus projetos e habilidades. Utilizei Next.js para garantir uma ótima performance e SEO, TypeScript para maior segurança no código e Tailwind CSS para estilização moderna e responsiva."
