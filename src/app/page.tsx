@@ -89,12 +89,12 @@ export default function Page() {
 
       <motion.section
         id="about"
-        className="min-h-screen"
+        className="min-h-screen md:h-auto py-16"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.15 }}
       >
         <About />
       </motion.section>

@@ -87,10 +87,10 @@ const technologies = [
 
 export default function About() {
   return (
-    <main className="bg-zinc-950 min-h-screen py-8">
-      <div className="container mx-auto px-4 mb-20">
+    <main className="bg-zinc-950 py-8"> {/* Removido min-h-screen */}
+      <div className="container mx-auto px-4 mb-16"> {/* Reduzido mb-20 para mb-16 */}
         <div className="flex flex-col items-center">
-          <div className="w-56 h-56 md:w-72 md:h-72 relative rounded-full overflow-hidden shrink-0 group transition-transform duration-300 hover:scale-125 z-10">
+          <div className="w-48 h-48 md:w-56 md:h-56 relative rounded-full overflow-hidden shrink-0 group transition-transform duration-300 hover:scale-125 z-10"> {/* Reduzido tamanho base */}
             <Image
               src="/euw.jpeg"
               alt="Geancarlo Bastos"
@@ -118,9 +118,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 mb-20">
+      <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-14">Tecnologias</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
           {technologies.map((tech) => (
             <div
               key={tech.name}
@@ -154,7 +154,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 mb-10">
+      <div className="container mx-auto px-6 mb-10 mt-16">
         <div className="max-w-4xl mx-auto bg-zinc-900 p-10 rounded-lg shadow-xl">
           <h2 className="text-4xl font-bold mb-8 text-center">Objetivos</h2>
           <p className="text-gray-300 text-lg mb-4">
