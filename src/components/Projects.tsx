@@ -119,99 +119,108 @@ export default function Projects() {
       {/* modal */}
       {selectedProject && (
         <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center p-2 sm:p-4 z-50 overflow-y-auto"
+          className="fixed inset-0 bg-black/80 flex items-start justify-center p-2 sm:p-4 z-50 overflow-y-auto"
           onClick={() => setSelectedProject(null)}
         >
           <div
             className="bg-zinc-900 rounded-lg w-full max-w-4xl my-4 relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative">
-              {/* botão de fechar */}
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="absolute top-2 right-2 sm:top-4 sm:right-4 text-gray-400 hover:text-white z-10"
-              >
-                <FaTimes size={24} />
-              </button>
+            {/* botão de fechar */}
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="absolute top-2 -right-4 z-50 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition-all duration-300 hover:scale-110" // Alterado de -top-4 para top-2
+              aria-label="Fechar"
+            >
+              <FaTimes size={20} />
+            </button>
 
-              {/* imagem destaque */}
-              <div className="w-full max-w-3xl mx-auto h-[300px] sm:h-[400px] lg:h-[500px] relative">
-                <Image
-                  src={selectedImage || selectedProject.image}
-                  alt={selectedProject.title}
-                  fill
-                  className="object-contain" // contain=toda imagem visivel, cover=preenche todo espaço, mas pode cortar 
-                  priority
-                />
-              </div>
+            {/* barra superior com título para mobile */}
+            <div className="md:hidden bg-zinc-800 p-4 rounded-t-lg flex items-center justify-between">
+              <h3 className="text-lg font-semibold">{selectedProject.title}</h3>
+            </div>
 
-              {/* miniaturas */}
-              <div className="p-2 sm:p-4 flex justify-center gap-2 sm:gap-4 overflow-x-auto">
-                {selectedProject.images.map((img, index) => (
-                  <div
-                    key={index}
-                    onClick={() => setSelectedImage(img)}
-                    className={`
-                      relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0
-                      rounded-lg overflow-hidden cursor-pointer 
-                      transition-all duration-200 
-                      ${selectedImage === img
-                        ? 'ring-2 ring-blue-500 scale-105'
-                        : 'hover:scale-105'
-                      }
-                    `}
-                  >
-                    <Image
-                      src={img}
-                      alt={`${selectedProject.title} - imagem ${index + 1}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+            {/* conteúdo do modal */}
+            <div className="overflow-y-auto max-h-[90vh] md:max-h-none">
+              <div className="relative">
+                {/* imagem destaque */}
+                <div className="w-full max-w-3xl mx-auto h-[300px] sm:h-[400px] lg:h-[500px] relative">
+                  <Image
+                    src={selectedImage || selectedProject.image}
+                    alt={selectedProject.title}
+                    fill
+                    className="object-contain" // contain=toda imagem visivel, cover=preenche todo espaço, mas pode cortar 
+                    priority
+                  />
+                </div>
 
-              {/* conteúdo */}
-              <div className="p-4 sm:p-6">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">{selectedProject.title}</h2>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {selectedProject.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 sm:px-3 py-1 bg-zinc-800 rounded-full text-xs sm:text-sm"
+                {/* miniaturas */}
+                <div className="p-2 sm:p-4 flex justify-center gap-2 sm:gap-4 overflow-x-auto">
+                  {selectedProject.images.map((img, index) => (
+                    <div
+                      key={index}
+                      onClick={() => setSelectedImage(img)}
+                      className={`
+                        relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0
+                        rounded-lg overflow-hidden cursor-pointer 
+                        transition-all duration-200 
+                        ${selectedImage === img
+                          ? 'ring-2 ring-blue-500 scale-105'
+                          : 'hover:scale-105'
+                        }
+                      `}
                     >
-                      {tech}
-                    </span>
+                      <Image
+                        src={img}
+                        alt={`${selectedProject.title} - imagem ${index + 1}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                   ))}
                 </div>
 
-                <p className="text-gray-300 mb-6 text-sm sm:text-base">
-                  {selectedProject.longDescription}
-                </p>
+                {/* conteúdo */}
+                <div className="p-4 sm:p-6">
+                  <h2 className="text-xl sm:text-2xl font-bold mb-4">{selectedProject.title}</h2>
 
-                <div className="flex flex-wrap gap-3">
-                  {selectedProject.github && (
-                    <a
-                      href={selectedProject.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors text-sm sm:text-base"
-                    >
-                      <FaGithub /> GitHub
-                    </a>
-                  )}
-                  {selectedProject.liveDemo && (
-                    <a
-                      href={selectedProject.liveDemo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors text-sm sm:text-base"
-                    >
-                      <FaLink /> Demo
-                    </a>
-                  )}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {selectedProject.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 sm:px-3 py-1 bg-zinc-800 rounded-full text-xs sm:text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <p className="text-gray-300 mb-6 text-sm sm:text-base">
+                    {selectedProject.longDescription}
+                  </p>
+
+                  <div className="flex flex-wrap gap-3">
+                    {selectedProject.github && (
+                      <a
+                        href={selectedProject.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors text-sm sm:text-base"
+                      >
+                        <FaGithub /> GitHub
+                      </a>
+                    )}
+                    {selectedProject.liveDemo && (
+                      <a
+                        href={selectedProject.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors text-sm sm:text-base"
+                      >
+                        <FaLink /> Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
