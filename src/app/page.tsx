@@ -92,9 +92,11 @@ export default function Page() {
         className="min-h-screen md:h-auto py-16"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.15 }}
+        viewport={{
+          once: false,
+          amount: 0.15
+        }}
       >
         <About />
       </motion.section>
@@ -104,9 +106,11 @@ export default function Page() {
         className="min-h-screen"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{
+          once: false,
+          amount: 0.15
+        }}
       >
         <Projects />
       </motion.section>
@@ -116,9 +120,11 @@ export default function Page() {
         className="min-h-screen"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{
+          once: false,
+          amount: 0.15
+        }}
       >
         <Contact />
       </motion.section>
