@@ -8,8 +8,13 @@ import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import { motion } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
+import { useEffect } from 'react';
 
 export default function Page() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="bg-zinc-950">
 
