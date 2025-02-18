@@ -66,7 +66,7 @@ const technologies = [
   {
     name: 'Visual Studio Code',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg',
-    level: 2
+    level: 3
   },
   {
     name: 'Ubuntu',
@@ -108,7 +108,7 @@ const technologies = [
 export default function About() {
   return (
     <main className="bg-zinc-950 py-8">
-      <div className="container mx-auto px-4 mb-16">
+      <div className="container mx-auto px-4 mb-10">
         <div className="flex flex-col items-center">
           <div className="w-48 h-48 md:w-56 md:h-56 relative rounded-full overflow-hidden shrink-0 group transition-transform duration-300 hover:scale-125 z-10">
             <Image

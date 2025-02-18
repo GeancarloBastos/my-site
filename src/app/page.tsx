@@ -21,9 +21,8 @@ export default function Page() {
       <motion.section
         id="home"
         className="min-h-screen flex items-center justify-center p-4"
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         <div className="max-w-5xl w-full bg-zinc-900 p-10 rounded-lg shadow-xl mx-auto">
@@ -109,13 +108,14 @@ export default function Page() {
 
       <motion.section
         id="about"
-        className="min-h-screen md:h-auto py-16"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
+        className="min-h-screen md:h-auto"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         viewport={{
           once: false,
-          amount: 0.15
+          amount: 0.01,
+          margin: "0px 0px -300px 0px"
         }}
       >
         <About />
