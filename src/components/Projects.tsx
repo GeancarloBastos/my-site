@@ -50,6 +50,17 @@ const projects: Project[] = [
     liveDemo: "https://projeto-adm-six.vercel.app/",
     longDescription: "Este foi o projeto integrador da faculdade, na qual conseguimos um parceria com uma loja de móveis planejados, que foi um grande diferencial dos demais. Fui o líder do projeto e do front, adquirindo experiência em reuniões com o cliente, para compreender melhor suas necessidades e desejos. Utilizamos React para a construção do site, TailwindCSS para estilização, TypeScript para segurança no código, PostgreeSQL e Supabase para o banco de dados. Foi usado também o método de desenvolvimento ágil, Scrum, para a entrega do projeto. Responsividade. Fora aprender toda a parte de segurança."
   },
+  {
+    id: 4,
+    title: "Steam",
+    description: "Site de jogos desenvolvido com React",
+    image: "/steam.png",
+    images: ["/steam.png", "/steam2.png", "/steam3.png", "/steam4.png"],
+    technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "Next.js"],
+    github: "https://github.com/GeancarloBastos/steam",
+    liveDemo: "https://steam-geancarlo.vercel.app/",
+    longDescription: "O projeto é uma cópia da famosa empresa de jogos, Steam. Foi desenvolvido com React, TailwindCSS e TypeScript. Me diverti muito desenvolvendo este projeto, mesmo com alguns contratempos, desenvolvi ele em 1 dia. Foi um grande desafio, mas no final deu tudo certo."
+  },
 ];
 
 export default function Projects() {

@@ -6,7 +6,6 @@ import { useState } from "react";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Adicione este objeto de mapeamento
   const sectionNames = {
     'about': 'Sobre',
     'projects': 'Projetos',

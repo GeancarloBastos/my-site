@@ -176,7 +176,7 @@ export default function About() {
 
       <div className="container mx-auto px-6 mb-10 mt-16">
         <div className="max-w-4xl mx-auto bg-zinc-900 p-10 rounded-lg shadow-xl">
-          <h2 className="text-4xl font-bold mb-8 text-center">Objetivos</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center">Objetivo</h2>
           <p className="text-gray-300 text-lg mb-4">
             Tenho experiência em projetos acadêmicos e externos e estou em busca de uma oportunidade para aplicar meus conhecimentos no mercado.
 
