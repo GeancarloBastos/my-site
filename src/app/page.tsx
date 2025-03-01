@@ -88,7 +88,7 @@ export default function Page() {
                   <FaLinkedin size={24} />
                 </a>
                 <a
-                  href="/cv25.pdf"
+                  href="/cv25att.pdf"
                   download="Curriculo_GeancarloBastos.pdf"
                   className="flex items-center gap-2 px-4 py-1 bg-blue-600 text-white rounded-full 
                     hover:bg-blue-700 transition-all duration-300 
