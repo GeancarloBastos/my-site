@@ -76,7 +76,7 @@ const projects: Project[] = [
     title: "Peres&Diaz Guincho",
     description: "Site de um cliente que tem uma empresa de guincho.",
     image: "/peres-diaz.png",
-    images: ["/peres-diaz.png", "/peres-diaz2.png", "/peres-diaz3.png", "/peres-diaz4.png", "/peres-diaz5.png", "/peres-diaz6.png", "/peres-diaz7.png" ],
+    images: ["/peres-diaz.png", "/peres-diaz2.png", "/peres-diaz3.png", "/peres-diaz4.png", "/peres-diaz5.png"],
     technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "Next.js"],
     liveDemo: "https://www.peresdiaz.com.br/",
     longDescription: "O site da Peres&Diaz Guincho foi desenvolvido para um cliente que possui uma empresa de guincho. Utilizei React e TailwindCSS, o site oferece uma interface moderna e responsiva, facilitando o acesso às informações sobre os serviços oferecidos pela empresa. Este projeto me permitiu aplicar minhas habilidades em desenvolvimento web e criar uma presença online eficaz para o negócio da cliente."
@@ -86,7 +86,7 @@ const projects: Project[] = [
     title: "Select Transfer",
     description: "Site de um cliente que tem uma empresa de transporte executivo.",
     image: "/select-transfer.png",
-    images: ["/select-transfer.png", "/select-transfer2.png", "/select-transfer3.png", "/select-transfer4.png", "/select-transfer5.png", "/select-transfer6.png", "/select-transfer7.png" ],
+    images: ["/select-transfer.png", "/select-transfer2.png", "/select-transfer3.png", "/select-transfer4.png", "/select-transfer5.png" ],
     technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "Next.js"],
     liveDemo: "https://www.selectransfer.com.br/",
     longDescription: "O site da Select Transfer foi desenvolvido para um cliente que possui uma empresa de transporte executivo. Utilizei React e TailwindCSS para criar uma interface elegante e funcional, garantindo que os usuários possam facilmente encontrar informações sobre os serviços oferecidos. Este projeto foi uma excelente oportunidade para aprimorar minhas habilidades em desenvolvimento web e contribuir para o sucesso do negócio do cliente."
