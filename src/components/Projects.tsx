@@ -37,7 +37,7 @@ const projects: Project[] = [
     technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "PostgreeSQL", "Supabase"],
     github: "https://github.com/GeancarloBastos/ProjetoCasa3",
     liveDemo: "https://projeto-cliente-ashen.vercel.app/",
-    longDescription: "Este foi o projeto integrador da faculdade, na qual conseguimos um parceria com uma loja de móveis planejados, que foi um grande diferencial dos demais. Fui o líder do projeto e do front, adquirindo experiência em reuniões com o cliente, para compreender melhor suas necessidades e desejos. Utilizamos React para a construção do site, TailwindCSS para estilização, TypeScript para segurança no código, PostgreeSQL e Supabase para o banco de dados. Foi usado também o método de desenvolvimento ágil, Scrum, para a entrega do projeto. Responsividade. Fora aprender toda a parte de segurança, como autenticação e autorização."
+    longDescription: "Este foi o projeto integrador da faculdade, na qual consegui parceria com uma loja de móveis planejados, que foi um grande diferencial dos demais. Fui o líder do projeto e do front, adquirindo experiência em reuniões com o cliente, para compreender melhor suas necessidades e desejos. Utilizamos React para a construção do site, TailwindCSS para estilização, TypeScript para segurança no código, PostgreeSQL e Supabase para o banco de dados. Foi usado também o método de desenvolvimento ágil, Scrum, para a entrega do projeto. Responsividade. Fora aprender toda a parte de segurança, como autenticação e autorização."
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const projects: Project[] = [
     technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "PostgreeSQL", "Supabase"],
     github: "https://github.com/GeancarloBastos/ProjetoCasa3/tree/adm",
     liveDemo: "https://projeto-adm-six.vercel.app/",
-    longDescription: "Este foi o projeto integrador da faculdade, na qual conseguimos um parceria com uma loja de móveis planejados, que foi um grande diferencial dos demais. Fui o líder do projeto e do front, adquirindo experiência em reuniões com o cliente, para compreender melhor suas necessidades e desejos. Utilizamos React para a construção do site, TailwindCSS para estilização, TypeScript para segurança no código, PostgreeSQL e Supabase para o banco de dados. Foi usado também o método de desenvolvimento ágil, Scrum, para a entrega do projeto. Responsividade. Fora aprender toda a parte de segurança."
+    longDescription: "Este foi o projeto integrador da faculdade, na qual consegui parceria com uma loja de móveis planejados, que foi um grande diferencial dos demais. Fui o líder do projeto e do front, adquirindo experiência em reuniões com o cliente, para compreender melhor suas necessidades e desejos. Utilizamos React para a construção do site, TailwindCSS para estilização, TypeScript para segurança no código, PostgreeSQL e Supabase para o banco de dados. Foi usado também o método de desenvolvimento ágil, Scrum, para a entrega do projeto. Responsividade. Fora aprender toda a parte de segurança."
   },
   {
     id: 4,
@@ -61,6 +61,36 @@ const projects: Project[] = [
     liveDemo: "https://steam-geancarlo.vercel.app/",
     longDescription: "O projeto é uma cópia da famosa empresa de jogos, Steam. Foi desenvolvido com React, TailwindCSS e TypeScript. Me diverti muito desenvolvendo este projeto, mesmo com alguns contratempos, desenvolvi ele em 1 dia. Foi um grande desafio, mas no final deu tudo certo."
   },
+  {
+    id: 5,
+    title: "Mesa Posta",
+    description: "Site de uma cliente que vende cestas e mesas de eventos.",
+    image: "/mesa-posta.png",
+    images: ["/mesa-posta.png", "/mesa-posta2.png", "/mesa-posta3.png", "/mesa-posta4.png", "/mesa-posta5.png", "/mesa-posta6.png", "/mesa-posta7.png" ],
+    technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "Next.js"],
+    liveDemo: "https://www.danialvariza.com.br/",
+    longDescription: "O Mesa Posta é um site desenvolvido para uma cliente que vende cestas e mesas de eventos. Foi desenvolvido com React e TailwindCSS, proporcionando uma experiência de usuário agradável e responsiva. O projeto foi uma ótima oportunidade para aprimorar minhas habilidades em desenvolvimento front-end e design de interfaces."
+  },
+  {
+    id: 6,
+    title: "Peres&Diaz Guincho",
+    description: "Site de um cliente que tem uma empresa de guincho.",
+    image: "/peres-diaz.png",
+    images: ["/peres-diaz.png", "/peres-diaz2.png", "/peres-diaz3.png", "/peres-diaz4.png", "/peres-diaz5.png", "/peres-diaz6.png", "/peres-diaz7.png" ],
+    technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "Next.js"],
+    liveDemo: "https://www.peresdiaz.com.br/",
+    longDescription: "O site da Peres&Diaz Guincho foi desenvolvido para um cliente que possui uma empresa de guincho. Utilizei React e TailwindCSS, o site oferece uma interface moderna e responsiva, facilitando o acesso às informações sobre os serviços oferecidos pela empresa. Este projeto me permitiu aplicar minhas habilidades em desenvolvimento web e criar uma presença online eficaz para o negócio da cliente."
+  },
+  {
+    id: 7,
+    title: "Select Transfer",
+    description: "Site de um cliente que tem uma empresa de transporte executivo.",
+    image: "/select-transfer.png",
+    images: ["/select-transfer.png", "/select-transfer2.png", "/select-transfer3.png", "/select-transfer4.png", "/select-transfer5.png", "/select-transfer6.png", "/select-transfer7.png" ],
+    technologies: ["JavaScript", "React", "TailwindCSS", "TypeScript", "Next.js"],
+    liveDemo: "https://www.selectransfer.com.br/",
+    longDescription: "O site da Select Transfer foi desenvolvido para um cliente que possui uma empresa de transporte executivo. Utilizei React e TailwindCSS para criar uma interface elegante e funcional, garantindo que os usuários possam facilmente encontrar informações sobre os serviços oferecidos. Este projeto foi uma excelente oportunidade para aprimorar minhas habilidades em desenvolvimento web e contribuir para o sucesso do negócio do cliente."
+  }
 ];
 
 export default function Projects() {

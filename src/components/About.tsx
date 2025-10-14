@@ -14,6 +14,11 @@ const technologies = [
     level: 3
   },
   {
+    name: 'React Native',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg',
+    level: 2
+  },
+  {
     name: 'Tailwind CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
     level: 3
