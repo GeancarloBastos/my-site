@@ -51,7 +51,7 @@ export default function Page() {
               </h1>
               <div className="text-gray-300 text-lg opacity-0 animate-fadeIn" style={{ animationDelay: '3s' }}>
                 <p>
-                  Atualmente, estou no 5º semestre de ADS na UniSENAC Pelotas e em busca de oportunidades para aplicar meus conhecimentos e crescer profissionalmente.
+                  Atualmente, estou no 6º semestre de ADS na UniSENAC Pelotas e em busca de oportunidades para aplicar meus conhecimentos e crescer profissionalmente.
                 </p>
                 <p className="mt-4">
                   Caso tenha interesse em saber mais sobre meus projetos e habilidades, entre em contato ou confira minha página{" "}
